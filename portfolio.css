@@ -1,0 +1,529 @@
+@charset "UTF-8";
+html{scroll-behavior: smooth;}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #fff;
+  }
+#header{
+  width: 100%; height: 5vw;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color:black;
+}
+#header h1{
+  font-size: 1.5vw;
+  margin-left: 3vw;
+  box-sizing: border-box;
+}
+#header>ul{
+  width: 40%;
+  z-index: 1000;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2vw;
+  margin-right: 3vw;
+  box-sizing: border-box;
+}
+#section .cursor{
+  position: absolute;
+  z-index: 10000000;
+}
+#section .cursor>img{
+  width: 10%;
+  z-index: 10000000;
+  filter:contrast(200%)
+}
+#section .quick_menu{
+  position: fixed;
+  bottom: 2vw; right: 2vw;
+  font-size: 1.1vw;
+  z-index: 1000000000000000;
+}
+#section .quick_menu .quick_sub{
+  display: none;
+}
+#section .quick_menu .quick_sub>li{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  /* background-color: #4294ff; */
+  margin-right: 0.2vw;
+}
+#section .quick_menu .quick_sub>li>a>i{
+  text-align: center;
+  align-content: center;
+  width: 2.5vw; height: 2.5vw;
+  margin-bottom: 0.5vw;
+  border: 2px solid #ffffff;
+  background-color: #9a1216;
+  border-radius: 50%;
+  margin-left: 0.5vw;
+}
+#section .quick_menu .quick_sub>li>p{
+  align-content: center;
+  font-size: 0.8vw;
+  display: none;
+}
+#section .quick_menu .quick_sub>li:hover>a>i{
+  color: #9a1216;
+  background-color: #ffffff;
+  border-color: #9a1216;
+}
+#section .quick_menu .quick_sub>li:hover>p{
+  display: block;
+}
+#section .quick_menu .quick_btn{
+  width: 3vw; height: 3vw;
+  font-size: 3vw;
+  cursor: pointer;
+  color: #9a1216;
+  margin-left: 5vw;
+}
+#section #section1{
+  background-image:url(images/main_bg.png);
+  background-size: cover;
+  width: 100%; height: 55vw;
+  margin-top: -5vw;
+  align-content: center;
+  box-sizing: border-box;
+}
+#section #section1 .canvas{
+  box-sizing: border-box;
+}
+#section #section1 .s1_center>h1>img{
+  position: absolute;
+  top: 21.5vw; left: 25vw;
+  width: 50%;
+  z-index: 10;
+  box-sizing: border-box;
+}
+#section #section1 .s1_center>h2>img{
+  position: absolute;
+  top:14.2vw; left: 30.5vw;
+  width: 37%;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+#section #section2{
+  width: calc(100 - 20px); height: 45vw;
+  background-color: #fffdee;
+  box-sizing: border-box;
+}
+#section #section2>h1{
+  z-index: 100000000000;
+  font-size: 2.5vw;
+  color: black;
+  padding: 3vw 0;
+  padding-left: 7vw;
+  box-sizing: border-box;
+}
+#section #section2>.profile_content{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 10000;
+  color: black;
+}
+#section #section2>.profile_content>ul>li:nth-child(1)>h1{
+  color: #f5232a;
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+  box-sizing: border-box;
+}
+#section #section2>.profile_content>ul:nth-child(1)>li, #section #section2>.profile_content>ul:nth-child(3)>li{
+  display: flex;
+}
+#section #section2>.profile_content>ul>li>h2{
+  font-size: 1vw;
+  color: #595959;
+  margin-right: 1vw;
+  box-sizing: border-box;
+}
+#section #section2>.profile_bottom{
+  display: flex;
+}
+#section #section2>.profile_bottom>div{
+  width: 55%;
+  text-align: center;
+}
+#section #section2>.profile_bottom>div>img{
+  width: 80%;
+  margin-left: 7vw;
+  text-align: center;
+}
+#section #section2>.profile_bottom>.myskill{
+  width: 40%;
+  margin-top: 5vw;
+  box-sizing: border-box;
+  margin-left: 0.3vw;
+}
+#section #section2>.profile_bottom>.myskill>li{
+  display: flex;
+  justify-content: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+#section #section2>.profile_bottom>.myskill>li>h1{
+  color: #f5232a;
+  font-size: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+#section #section2>.profile_bottom>.myskill>li>p{
+  box-sizing: border-box;
+}
+#section #section2>.profile_bottom>.myskill>li>p>img{
+  width: 100%;
+  margin-right: 5%;
+}
+/* ----------------------------------------------------------- */
+#section #section3{
+  width: 100%;
+  position: relative;
+}
+#section #section3 .section3_nav{
+  display: none;
+}
+#section #section3 .section3_nav>ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 2vw;
+  top: 1vw;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1vw 1.5vw;
+  border-radius: 5vw;
+}
+#section #section3 .section3_nav>ul>li{
+  cursor: pointer;
+  font-size: 1vw;
+}
+#section #section3 .project{
+  background-image: url(images/section_bg.png);
+  background-size: cover;
+  width: 100%; height: 44.4vw;
+  /* border: 1px solid red; */
+  padding-top: 11.9vw;
+  display: flex;
+}
+#section #section3 .project:nth-child(odd){
+  flex-direction: row-reverse;
+}
+#section #section3 .project>.p_left{
+  width: 40%;
+  margin: 0 auto;
+  padding: 0 5%;
+  margin-top: -5vw;
+  box-sizing: border-box;
+}
+#section #section3 .project:nth-child(odd)>.p_left{
+  padding-right: 10%;
+}
+#section #section3 .project>.p_left .p_title{
+  margin-bottom: 5vw;
+  color: rgba(209, 209, 209, 0.553);
+}
+#section #section3 .project>.p_left .p_title>h1{
+  padding-top: -5vw;
+  padding-bottom: 3%;
+  font-size: 2vw;
+}
+#section #section3 .project>.p_left>.p_text>li>h2{
+  font-size: 1.3vw;
+  color: #b1f041;
+  margin-bottom: 4%;
+}
+#section #section3 .p6>.p_left>.p_text>li:nth-child(1)>img{
+  transform: scale(1.6);
+  margin-left: 2vw;
+  padding: 0.7vw 0;
+}
+#section #section3 .p5>.p_left>.p_text>li>h2{
+  margin-bottom: 6%;
+}
+#section #section3 .p5>.p_left>.p_text>li:nth-child(2)>p{
+  margin-bottom: 2vw;
+}
+#section #section3 .p6>.p_left>.p_text>li>h2{
+  margin-bottom: 1.6vw;
+}
+#section #section3 .p7>.p_left>.p_text>li>h2{
+  margin-bottom: 7%;
+}
+#section #section3 .p2>.p_left>.p_text>li>h2{
+  color: #4294ff;
+}#section #section3 .p3>.p_left>.p_text>li>h2{
+  color: #ffc738;
+}#section #section3 .p4>.p_left>.p_text>li>h2{
+  color: #f5232a;
+}#section #section3 .p5>.p_left>.p_text>li>h2{
+  color: #d3e06d;
+}#section #section3 .p6>.p_left>.p_text>li>h2{
+  color: #ff6801;
+}#section #section3 .p7>.p_left>.p_text>li>h2{
+  color: #7446f5;
+}
+#section #section3 .project>.p_left>.p_text>li:first-child>img{
+  width: 33%;
+  margin-bottom:7%;
+  margin-top: -2vw;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(3){
+  display: flex;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(3)>h2, li:nth-child(4)>h2{
+  margin-right: 5%;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+#section #section3 .project>.p_left>.p_text>li>p{
+  margin-bottom: 3%;
+  font-size: 1vw;
+  line-height: 1.6vw;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(4)>.tool{
+  display: flex;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(4)>.tool>li>img{
+  width: 90%;
+  margin-right: 3%;
+}
+#section #section3 .p5>.p_left>.p_text>li:nth-child(4)>.tool{
+  width: 70%;
+}
+#section #section3 .p6>.p_left>.p_text>li:nth-child(4)>.tool{
+  width: 90%;
+}
+#section #section3 .p7>.p_left>.p_text>li:nth-child(4)>.tool{
+  width: 80%;
+}
+#section #section3 .project>.p_left>.p_text>li>p>span{
+  display: block;
+}
+#section #section3 .project>.p_left>.btn{
+  display: flex;
+  margin-top: 7%;
+  margin-left: 1%;
+  box-sizing: border-box;
+}
+#section #section3 .project>.p_left>.btn>p{
+  text-align: center;
+  width: 12vw; height: 3vw;
+  margin-right: 5%;
+  border: 1px solid #b1f041;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#section #section3 .project>.p_left>.btn>p>a{
+  position: relative;
+  top:-2.4vw; left: auto;
+  font-size: 1vw;
+  transition: all 0.3s ease-in;
+}
+#section #section3 .project>.p_left>.btn>p:hover>a{
+  font-weight: bold;
+}
+#section #section3 .p5>.p_left>.btn>p:hover>a,#section #section3 .p1>.p_left>.btn>p:hover>a{
+  color: black;
+}
+#section #section3 .project>.p_left>.btn>p::before{
+  display: block;
+  align-content: center;
+  content: "";
+  width: 12vw; height: 3vw;
+  background-color: #b1f041;
+  position: relative;
+  top:0; left: -15vw;
+  transition: all 0.3s ease-in;
+}
+#section #section3 .p2>.p_left>.btn>p::before{
+  background-color: #4294ff;
+}
+#section #section3 .p3>.p_left>.btn>p::before{
+  background-color: #ffc738;
+}
+#section #section3 .p4>.p_left>.btn>p::before{
+  background-color: #f5232a;
+}
+#section #section3 .p5>.p_left>.btn>p::before{
+  background-color: #d3e06d;
+}
+#section #section3 .p6>.p_left>.btn>p::before{
+  background-color: #ff6801;
+}
+#section #section3 .p7>.p_left>.btn>p::before{
+  background-color: #7446f5;
+}
+#section #section3 .project>.p_left>.btn>p:hover::before{
+  top:0; left: 0vw;
+}
+#section #section3 .p2>.p_left>.btn>p{
+  border: 1px solid #4294ff;
+}
+#section #section3 .p3>.p_left>.btn>p{
+  border: 1px solid #ffc738;
+}
+#section #section3 .p4>.p_left>.btn>p{
+  border: 1px solid #9a1216;
+}
+#section #section3 .p5>.p_left>.btn>p{
+  border: 1px solid #d3e06d;
+}
+#section #section3 .p6>.p_left>.btn>p{
+  border: 1px solid #ff6801;
+}
+#section #section3 .p7>.p_left>.btn>p{
+  border: 1px solid #7446f5;
+}
+/*  */
+#section #section3 .project>.p_right{
+  width: 60%;
+  /* border: 1px solid yellow; */
+}
+#section #section3 .project:nth-child(even)>.p_right{
+  text-align: right;
+}
+#section #section3 .project>.p_right>a>img{
+  width: 100%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  object-fit:cover;
+  box-sizing: border-box;
+  transition: all 1s;
+  box-sizing: border-box;
+}
+#section #section3 .project:nth-child(even)>.p_right>a>img{
+  padding-right: 10%;
+}
+#section #section3 .project:nth-child(odd)>.p_right>a>img{
+  padding-left: 10%;
+}
+#section #section3 .project>.p_right>a>img:hover{
+  transform: scale(1.025);
+}
+#section #section4{
+  width: 100%;
+  height: 46.9vw;
+  background-color: black;
+  box-sizing: border-box;
+}
+#section #section4>h1{
+  font-size: 2vw;
+  padding-top: 4vw;
+  padding-left: 5vw;
+  box-sizing: border-box;
+}
+#section #section4>.javascript{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4vw;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+#section #section4>.javascript>li{
+  width: 100%; height: 9vw;
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#section #section4>.javascript>li::before{
+  display: block;
+  content: "";
+  width: 100%;
+  position: absolute;
+  top:8.8vw; left: -90vw;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  transition: all 0.4s ease-in;
+}
+#section #section4>.javascript>li:hover{
+  background-color: rgba(138, 138, 138, 0.37);
+}
+#section #section4>.javascript>li:hover::before{
+  top:8.8vw; left: 0vw;
+}
+#section #section4>.javascript>li>a{
+  display: flex;
+}
+#section #section4>.javascript>li>a>p{
+  margin-right: 5vw;
+  margin-left: 1vw;
+  font-size: 1.5vw;
+  box-sizing: border-box;
+}
+#section #section4>.javascript>li>a>p{
+  width: 10%;
+}
+#section #section4>.javascript>li>a>h1{
+  width: 30%;
+  margin: 0 auto;
+}
+#section #section4>.javascript li>a>h3{
+  width: 60%;
+}
+#section #section4>.javascript>li>a>h3{
+  font-size: 2.5vw;
+}
+#section #section4>.javascript>li>a>h1>img{
+  width: 60%;
+  box-sizing: border-box;
+  display: none;
+}
+#section #section4>.javascript>li:hover>a>h1>img{
+  display: block;
+  margin: 0 auto;
+}
+/* #section .section4>.javascript>li:nth-child(1)>p:nth-of-type(2)>img{
+  margin-left: 121.2%;
+  box-sizing: border-box;
+}
+#section .section4>.javascript>li:nth-child(3)>p:nth-of-type(2)>img{
+  margin-left: 133.6%;
+  box-sizing: border-box;
+} */
+#section #section5{
+  width: 100%; height: 30vw;
+  background-color: black;
+  align-content: center;
+  text-align: center;
+}
+#section #section5 .connect>h1{
+  margin-top: 10vw;
+  font-size: 5vw;
+}
+#section #section5 .connect>ul{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10vw;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
