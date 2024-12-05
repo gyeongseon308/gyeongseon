@@ -843,7 +843,7 @@ body {
     display: none;
 }
 #section #section2{
-  padding-bottom: 175%;
+  padding-bottom: 200%;
 }
 #section #section2>.profile_content{
   padding-left: 1%;
@@ -851,7 +851,7 @@ body {
 }
 #section #section2>.profile_content>h1{
   font-size: 6vw;
-  padding: 7vw 5vw;
+  padding: 9vw 6vw;
   color: #595959;
 }
 #section #section2>.profile_content>.profile_wrap{
@@ -863,7 +863,7 @@ body {
 }
 #section #section2>.profile_content>.profile_wrap>.profile_box:nth-child(1){
   justify-content:space-around;
-  margin-bottom: 5vw;
+  margin-bottom: 8vw;
 }
 /* #section #section2>.profile_content>.profile_wrap>.profile_box:nth-child(2){
   justify-content:center;
@@ -892,18 +892,18 @@ body {
 }
 #section #section2>.profile_bottom{
   /* border: 1px solid red; */
-  flex-direction:reverse;
+  flex-direction:row-reverse;
   justify-content:left;
   position: relative;
   /* border: 1px solid black; */
 }
 #section #section2>.profile_bottom>div>img{
   position: absolute;
-  bottom: -44.25vw; left: 4vw;
+  bottom: -56.7vw; left: 4vw;
 }
 #section #section2>.profile_bottom>.myskill{
-  margin-left: -4vw;
-  margin-top: 5vw;
+  margin-left: 7vw;
+  margin-top: 8vw;
 }
 #section #section2>.profile_bottom>.myskill>li{
   display: block;
@@ -916,14 +916,14 @@ body {
   display: block;
 }
 #section #section2>.profile_bottom>.myskill>li:nth-child(2)>div>p>img{
-  width: 6vw;
+  width: 7vw;
   padding-right: 3vw;
 }
 #section #section3>.section3_nav>ul{
-  width: 70vw;
+  width: 90vw;
 }
 #section #section3>.section3_nav>ul>li{
-  font-size: 1.7vw;
+  font-size: 2.3vw;
 }
 #section #section3>.project{
   position: relative;
@@ -935,19 +935,31 @@ body {
 }
 #section #section3 .project>.p_right>a>img{
   margin-top: 3vw;
-  width: 90vw; height: 50vw;
+  padding: 0; margin: 0;
+  padding-left: 5.5vw;
+  width: 93.5vw; height: 50vw;
   justify-content: center;
   display: block;
   box-sizing: border-box;
+  
 }
-#section #section3 .project:nth-child(even)>.p_right>a>img{
-  margin-left: 7.5vw;
+#section #section3 .project>.p_right{
+  padding: 0;
+  margin: 0;
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 2vw;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+#section #section3 .project>.p_right>a{
+  width:fit-content;
+  background-color: #4294ff;
 }
 #section #section3 .project:nth-child(odd)>.p_right>a>img{
-  margin-left: 1.5vw;
-}
-#section #section3 .p7>.p_right>a>img{
-  margin-top: -4vw;
+  box-sizing: border-box;
+  margin-left: -6.4vw;
 }
 #section #section3 .project>.p_left .p_title>h1{
   position: absolute;
@@ -960,121 +972,111 @@ body {
   padding-top: 9vw;
   padding-bottom: 10vw;
 }
+#section #section3 .project>.p_left>.p_text{
+  display: block;
+  margin-top: 5vw;
+}
 #section #section3 .project>.p_left>.p_text>li{
-  display: flex;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-align: center;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(1){
+  margin-top: 10vw;
   box-sizing: border-box;
-  box-sizing: content-box;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(2){
+  margin-top: 12vw;
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(3){
+  display: block;
+  
+}
+#section #section3 .project>.p_left>.p_text>li:nth-child(3)>h2{
+  margin: 0; padding: 0;
+  margin-bottom: 2vw;
+  margin-top: 7vw;
 }
 #section #section3 .project>.p_left>.p_text>li>h2{
-  font-size: 2.8vw;
-  width: max-content;
-  margin-right: 2vw;
+  font-size: 3vw;
+  margin: 0; padding: 0;
   box-sizing: border-box;
+  margin-bottom: 2vw;
+  margin-top: 7vw;
 }
 #section #section3 .project>.p_left>.p_text>li>p{
-  font-size: 2.2vw;
+  font-size: 2.5vw;
   line-height: normal;
   align-items: center;
 }
 #section #section3 .project>.p_left>.p_text>li:nth-child(1)>img{
-  margin-top: 7vw;
-  width: 20%;
+  width: 25%;
+  margin-top: 4vw;
 }
 #section #section3 .p6>.p_left>.p_text>li:nth-child(1)>img{
-  width: 15%;
+  width: 23%;
   margin-left: 3vw;
 }
-#section #section3 .project>.p_left>.p_text>li:nth-child(2)>h2{
-  width: 55vw;
-  /* border: 1px solid red; */
-}
-#section #section3 .p4>.p_left>.p_text>li:nth-child(2)>h2{
-  width: 61vw;
-  padding: 0;
-}
-#section #section3 .project>.p_left>.p_text>li:nth-child(2){
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-}
-#section #section3 .p2>.p_left>.p_text>li:nth-child(2)>p{
-  margin-left: 2vw;
-}
-#section #section3 .p3>.p_left>.p_text>li:nth-child(2)>p{
-  margin-left: -4vw;
-}
-#section #section3 .p4>.p_left>.p_text>li:nth-child(2)>p{
-  margin-left: 3.8vw;
-}
-#section #section3 .p5>.p_left>.p_text>li:nth-child(2)>p{
-  margin-left: -10.5vw;
-}
-#section #section3 .p6>.p_left>.p_text>li:nth-child(2)>p{
-  margin-left: -5vw;
-}
-#section #section3 .p7>.p_left>.p_text>li:nth-child(2)>p{
-  margin-left: -7vw;
-}
-#section #section3 .project>.p_left>.p_text>li:nth-child(2)>p>span{
-  display: inline;
-}
-#section #section3 .project>.p_left>.p_text>li:nth-child(3)>h2{
-  margin-right: 11.5vw;
-}
-#section #section3 .p6>.p_left>.p_text>li:nth-child(3){
-  margin-bottom: 2.5vw;
+#section #section3 .p7>.p_left>.p_text>li:nth-child(1)>img{
+  width: 30%;
+  margin-bottom: 5vw;
 }
 #section #section3 .project>.p_left>.p_text>li:nth-child(4)>.tool{
-  width: 80%;
-}
-#section #section3 .project>.p_left>.p_text>li:nth-child(4)>ul{
-  width: 60%;
-  margin-left: 11.5vw;
+  width: 100%;
+  margin: 0 auto;
 }
 #section #section3 .p5>.p_left>.p_text>li:nth-child(4)>.tool{
   width: 50%;
 }
 #section #section3 .project>.p_left>.btn{
   position: absolute;
-  top:22vw; left: 23vw;
+  top:36vw; left: 28vw;
 }
 #section #section3 .p1>.p_left>.btn{
-  top:21vw; left: 23.5vw;
+  top:34vw; left: 15vw;
+}
+#section #section3 .p3>.p_left>.btn{
+  top:34vw; left: 30vw;
 }
 #section #section3 .p4>.p_left>.btn{
-  top:21vw; left: 25vw;
+  top:37vw; left: 15vw;
 }
 #section #section3 .p5>.p_left>.btn{
-  top:20.5vw; left: 24vw;
+  top:33vw; left: 30.5vw;
 }
 #section #section3 .p6>.p_left>.btn{
-  top:20.5vw; left: 24vw;
+  top:35vw; left: 28vw;
 }
 #section #section3 .p7>.p_left>.btn{
-  top:20.5vw; left: 24vw;
+  top:34vw; left: 31vw;
 }
 #section #section3 .p4>.p_left>.p_text>li:nth-child(4)>.tool{
   width: 110%;
 }
+#section #section3 .p5>.p_left>.p_text>li:nth-child(4)>.tool{
+  width: 70%;
+}
 #section #section3 .p6>.p_left>.p_text>li:nth-child(4)>.tool{
-  width: 60%;
+  width: 65%;
 }
 #section #section3 .p7>.p_left>.p_text>li:nth-child(4)>.tool{
-  width: 50%;
+  width: 60%;
 }
 #section #section3 .project>.p_left>.btn>p{
-  width: 25vw; height: 5vw;
+  width: 27vw; height: 8vw;
   margin: 0 auto;
   padding: 0;
   margin-left: 4vw;
 }
 #section #section3 .project>.p_left>.btn>p>a{
-  font-size: 2vw;
-  top:-4.2vw;
-  padding: 0;
+  font-size: 2.7vw;
+  top:-7.5vw;
   align-items: center;
 }
 #section #section3 .project>.p_left>.btn>p::before{
-  width: 25vw; height: 5vw;
+  width: 27vw; height: 8vw;
   top:0vw; left: -30vw;
 }
 #section #section4{
