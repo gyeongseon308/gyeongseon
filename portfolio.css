@@ -817,7 +817,7 @@ body {
     padding-top: 7%;
   }
   #section #section1{
-    padding-bottom: 150%;
+    padding-bottom: 170%;
     z-index: 10000;
     background-image: none;
     background-color: black;
@@ -826,6 +826,7 @@ body {
     width: 85%;
     top:35%; left: 8%;
     animation: slope 5s linear infinite;
+    z-index: 100000000;
   }
   @keyframes slope {
     0% {
@@ -842,7 +843,7 @@ body {
     display: none;
 }
 #section #section2{
-  padding-bottom: 150%;
+  padding-bottom: 175%;
 }
 #section #section2>.profile_content{
   padding-left: 1%;
@@ -891,15 +892,17 @@ body {
 }
 #section #section2>.profile_bottom{
   /* border: 1px solid red; */
-  flex-direction:row-reverse;
+  flex-direction:reverse;
   justify-content:left;
+  position: relative;
   /* border: 1px solid black; */
 }
 #section #section2>.profile_bottom>div>img{
-  display: none;
+  position: absolute;
+  bottom: -44.25vw; left: 4vw;
 }
 #section #section2>.profile_bottom>.myskill{
-  margin-left: 6vw;
+  margin-left: -4vw;
   margin-top: 5vw;
 }
 #section #section2>.profile_bottom>.myskill>li{
@@ -913,7 +916,7 @@ body {
   display: block;
 }
 #section #section2>.profile_bottom>.myskill>li:nth-child(2)>div>p>img{
-  width: 7vw;
+  width: 6vw;
   padding-right: 3vw;
 }
 #section #section3>.section3_nav>ul{
@@ -924,7 +927,7 @@ body {
 }
 #section #section3>.project{
   position: relative;
-  padding-bottom: 100%;
+  padding-bottom: 150%;
   flex-direction: column;
 }
 #section #section3 .project:nth-child(odd){
