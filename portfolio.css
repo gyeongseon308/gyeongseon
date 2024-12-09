@@ -18,11 +18,13 @@ body {
   }
 #header{
   width: 100%; height: 5vw;
+  position: absolute;
+  top:0; left: 0;
   align-content: center;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  background-color:black;
+  z-index: 100000000;
 }
 #header h1{
   font-size: 1.5vw;
@@ -39,20 +41,112 @@ body {
   margin-right: 3vw;
   box-sizing: border-box;
 }
+#header .hamburger_menu>.column_box{
+  background-color: #111111f5;
+  width: 50%; height: 166vw;
+  position: absolute;
+  top:0;
+  right: 0;
+  color: #575555;
+  z-index: 1000000;
+  display: flex;
+  flex-direction: column;
+}
+#header .hamburger_menu>.column_box>.close{
+  font-size: 6vw;
+  position: absolute;
+  top: 2%;
+  right: 12%;
+  cursor: pointer;
+  z-index: 11;
+  color: white;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb{
+  margin-top: 35%;
+  margin-left: 5%;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li{
+  margin-bottom: 15%;
+  line-height: 6vw;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu{
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu a{
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu a:hover{
+  color: #dd4f5f;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.hamburg_sub{
+  height: auto;
+  box-sizing: border-box;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.hamburg_sub>li{
+  font-size: 3vw;
+  margin-left: 2%;
+  color: #838282;
+  cursor: pointer;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .open{
+  font-size: 5vw;
+  font-weight: bold;
+  margin-right: 5%;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .open{
+  font-size: 5vw;
+  font-weight: bold;
+  margin-right: 5%;
+  display: none;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .shut{
+  font-size: 5vw;
+  font-weight: bold;
+  margin-right: 5%;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .shut.view{
+  display: block;
+}
+#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.hamburg_sub>li:hover{
+  width: 95%;
+  background-color: #d7b8bcb8;
+  color: white;
+}
+#header .hamburger_menu>.hamburger_icon{
+  font-size: 7vw;
+  position: absolute;
+  top:3vw;
+  right: 5%;
+  z-index: 1000;
+  cursor: pointer;
+  /* display: none; */
+  }
+#header .hamburger_menu >.column_box{
+  z-index: 1000;
+  display: none;
+}
+#header>.hamburger_menu{
+  display: none;
+}
 #section .cursor{
   position: absolute;
-  z-index: 10000000;
+  z-index: 100;
 }
 #section .cursor>img{
   width: 10%;
-  z-index: 10000000;
+  z-index: 100;
   filter:contrast(200%)
 }
 #section .quick_menu{
   position: fixed;
   bottom: 2vw; right: 2vw;
   font-size: 1.1vw;
-  z-index: 1000000000000000;
+  z-index: 100;
 }
 #section .quick_menu .quick_sub{
   display: none;
@@ -98,7 +192,6 @@ body {
   background-image:url(images/main_bg.png);
   background-size: cover;
   width: 100%; height: 55vw;
-  margin-top: -5vw;
   align-content: center;
   box-sizing: border-box;
 }
@@ -127,7 +220,7 @@ body {
 }
 }
 #section #section2{
-  width: calc(100 - 20px); height: 45vw;
+  width: calc(100 - 20px); height: 50vw;
   background-color: #fffdee;
   box-sizing: border-box;
 }
@@ -187,6 +280,7 @@ body {
 }
 #section #section2>.profile_bottom>div>img{
   width: 80%;
+  margin-top: 1.8vw;
   margin-left: 7vw;
   text-align: center;
 }
@@ -811,10 +905,37 @@ body {
   }
 }
 @media all and (max-width:778px){
+  #header{
+    width: 100%; height: 12vw;
+    position: fixed;
+    top: 0; left: 0%;
+    background-color: black;
+  }
   #header h1{
+    display: none;
+  }
+  #header>ul{
+    display: none;
+  }
+  #header>.hamburger_menu{
+    z-index: 10000;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #header>.hamburger_menu>.hamburger_bar{
+    display: flex;
+    justify-content: space-between;
+  }
+  #header>.hamburger_menu>.hamburger_bar>.hamburg_logo>a{
     font-size: 3vw;
-    margin: 0 5vw;
-    padding-top: 7%;
+  }
+  #header>.hamburger_menu>.hamburger_bar>.hamburger_icon>i{
+    font-size: 5vw;
+    cursor: pointer;
+  }
+  #header>.hamburger_menu{
+    display: block;
+    z-index: 10000;
   }
   #section #section1{
     padding-bottom: 170%;
@@ -822,11 +943,17 @@ body {
     background-image: none;
     background-color: black;
   }
+  #section .cursor{
+    display: none;
+  }
+  #section .quick_menu{
+    display: none;
+  }
   #section #section1 .s1_center>h1>img{
     width: 85%;
     top:35%; left: 8%;
     animation: slope 5s linear infinite;
-    z-index: 100000000;
+    z-index: 100;
   }
   @keyframes slope {
     0% {
@@ -921,6 +1048,7 @@ body {
 }
 #section #section3>.section3_nav>ul{
   width: 90vw;
+  display: none;
 }
 #section #section3>.section3_nav>ul>li{
   font-size: 2.3vw;
