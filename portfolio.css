@@ -984,9 +984,6 @@ body {
   justify-content:space-around;
   margin-bottom: 8vw;
 }
-/* #section #section2>.profile_content>.profile_wrap>.profile_box:nth-child(2){
-  justify-content:center;
-} */
 #section #section2>.profile_content>.profile_wrap>.profile_box>ul>li:nth-child(1)>h1{
   font-size: 3.5vw;
   margin-bottom: 4vw;
@@ -1056,7 +1053,7 @@ body {
 #section #section3 .project>.p_right>a>img{
   margin-top: 3vw;
   padding: 0; margin: 0;
-  padding-left: 5.5vw;
+  padding-left: 8%;
   width: 93.5vw; height: 50vw;
   justify-content: center;
   display: block;
@@ -1079,7 +1076,6 @@ body {
 }
 #section #section3 .project:nth-child(odd)>.p_right>a>img{
   box-sizing: border-box;
-  margin-left: -6.4vw;
 }
 #section #section3 .project>.p_left .p_title>h1{
   position: absolute;
@@ -1108,7 +1104,7 @@ body {
   box-sizing: border-box;
 }
 #section #section3 .project>.p_left>.p_text>li:nth-child(2){
-  margin-top: 12vw;
+  margin-top: 15vw;
 }
 #section #section3 .project>.p_left>.p_text>li:nth-child(3){
   display: block;
@@ -1119,15 +1115,18 @@ body {
   margin-bottom: 2vw;
   margin-top: 7vw;
 }
+#section #section3 .project>.p_left>.p_text>li:nth-child(3)>p{
+  font-size: 4vw;
+}
 #section #section3 .project>.p_left>.p_text>li>h2{
-  font-size: 3vw;
+  font-size: 4vw;
   margin: 0; padding: 0;
   box-sizing: border-box;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
   margin-top: 7vw;
 }
 #section #section3 .project>.p_left>.p_text>li>p{
-  font-size: 2.5vw;
+  font-size: 3vw;
   line-height: normal;
   align-items: center;
 }
@@ -1192,7 +1191,7 @@ body {
 }
 #section #section3 .project>.p_left>.btn>p>a{
   font-size: 2.7vw;
-  top:-7.8vw;
+  top:-8vw;
   align-items: center;
 }
 #section #section3 .project>.p_left>.btn>p::before{
