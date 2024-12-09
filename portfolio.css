@@ -43,7 +43,7 @@ body {
 }
 #header .hamburger_menu>.column_box{
   background-color: #111111f5;
-  width: 50%; height: 166vw;
+  width: 65%; height: 169.9vw;
   position: absolute;
   top:0;
   right: 0;
@@ -53,10 +53,10 @@ body {
   flex-direction: column;
 }
 #header .hamburger_menu>.column_box>.close{
-  font-size: 6vw;
+  font-size: 10vw;
   position: absolute;
-  top: 2%;
-  right: 12%;
+  top: 0;
+  right: 8%;
   cursor: pointer;
   z-index: 11;
   color: white;
@@ -66,7 +66,7 @@ body {
   margin-left: 5%;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li{
-  margin-bottom: 15%;
+  margin-bottom: 20%;
   line-height: 6vw;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu{
@@ -77,7 +77,7 @@ body {
   cursor: pointer;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu a{
-  font-size: 3.5vw;
+  font-size: 5vw;
   font-weight: bold;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu a:hover{
@@ -88,18 +88,19 @@ body {
   box-sizing: border-box;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.hamburg_sub>li{
-  font-size: 3vw;
+  font-size: 4.2vw;
+  margin-top: 3vw;
   margin-left: 2%;
   color: #838282;
   cursor: pointer;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .open{
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bold;
   margin-right: 5%;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .open{
-  font-size: 5vw;
+  font-size: 7vw;
   font-weight: bold;
   margin-right: 5%;
   display: none;
@@ -906,10 +907,10 @@ body {
 }
 @media all and (max-width:778px){
   #header{
-    width: 100%; height: 12vw;
+    width: 100%; height: 15vw;
     position: fixed;
     top: 0; left: 0%;
-    background-color: black;
+    background-color:#4294ff;
   }
   #header h1{
     display: none;
@@ -927,11 +928,13 @@ body {
     justify-content: space-between;
   }
   #header>.hamburger_menu>.hamburger_bar>.hamburg_logo>a{
-    font-size: 3vw;
+    font-size: 4vw;
+    font-weight: bold;
   }
   #header>.hamburger_menu>.hamburger_bar>.hamburger_icon>i{
-    font-size: 5vw;
+    font-size: 9vw;
     cursor: pointer;
+    font-weight: bold;
   }
   #header>.hamburger_menu{
     display: block;
