@@ -43,7 +43,7 @@ body {
 }
 #header .hamburger_menu>.column_box{
   background-color: #111111f5;
-  width: 65%; height: 169.9vw;
+  width: 70%; height: 100vh;
   position: absolute;
   top:0;
   right: 0;
@@ -84,6 +84,7 @@ body {
   color: #dd4f5f;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.hamburg_sub{
+  margin-top: 10vw;
   height: auto;
   box-sizing: border-box;
 }
@@ -95,11 +96,6 @@ body {
   cursor: pointer;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .open{
-  font-size: 4vw;
-  font-weight: bold;
-  margin-right: 5%;
-}
-#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .open{
   font-size: 7vw;
   font-weight: bold;
   margin-right: 5%;
@@ -109,9 +105,6 @@ body {
   font-size: 5vw;
   font-weight: bold;
   margin-right: 5%;
-}
-#header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.link_menu .shut.view{
-  display: block;
 }
 #header .hamburger_menu>.column_box>.hamburg_menu>.hamburg_gnb>li>.hamburg_sub>li:hover{
   width: 95%;
@@ -127,10 +120,6 @@ body {
   cursor: pointer;
   /* display: none; */
   }
-#header .hamburger_menu >.column_box{
-  z-index: 1000;
-  display: none;
-}
 #header>.hamburger_menu{
   display: none;
 }
@@ -910,7 +899,7 @@ body {
     width: 100%; height: 15vw;
     position: fixed;
     top: 0; left: 0%;
-    background-color:#4294ff;
+    background-color: black;
   }
   #header h1{
     display: none;
@@ -928,7 +917,7 @@ body {
     justify-content: space-between;
   }
   #header>.hamburger_menu>.hamburger_bar>.hamburg_logo>a{
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: bold;
   }
   #header>.hamburger_menu>.hamburger_bar>.hamburger_icon>i{
@@ -1203,7 +1192,7 @@ body {
 }
 #section #section3 .project>.p_left>.btn>p>a{
   font-size: 2.7vw;
-  top:-7.5vw;
+  top:-7.8vw;
   align-items: center;
 }
 #section #section3 .project>.p_left>.btn>p::before{
